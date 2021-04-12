@@ -89,12 +89,29 @@
     <Compile Include="DayCareFacility.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202104121618025_InitialMigration.cs" />
+    <Compile Include="Migrations\202104121618025_InitialMigration.Designer.cs">
+      <DependentUpon>202104121618025_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104121619358_Adding Day CareFacilityFKey.cs" />
+    <Compile Include="Migrations\202104121619358_Adding Day CareFacilityFKey.Designer.cs">
+      <DependentUpon>202104121619358_Adding Day CareFacilityFKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Teacher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202104121618025_InitialMigration.resx">
+      <DependentUpon>202104121618025_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104121619358_Adding Day CareFacilityFKey.resx">
+      <DependentUpon>202104121619358_Adding Day CareFacilityFKey.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
